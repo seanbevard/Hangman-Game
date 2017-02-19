@@ -10,24 +10,30 @@
     <!-- Added a link to Bootstrap and local css file-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </HEAD>
 
 <BODY>
     <div class="jumbotron">
         <h1 class="text-center">Soccer Club Hangman</h1>
-        <h1 class="text-center" id="secretWordId"></h1><br>
-        <h3 class="text-center">Used Letters:</h3><br>
-            <div align="center" id="buttons"></div>
-
+        <h1 class="text-center" id="secretWordId"></h1>
+        <h3 class="text-center">Used Letters:</h3>
+        <div align="center" id="buttons"></div>
     </div>
-<div class="container text-center">
-
-    <div class="row justify-content-md-center">
-        <div class="col-md-3 col-centered"><h3>Wins:<h3 id="winsId"></h2></h2></div>
-               <div class="col-md-6 col-centered"><h3>Guesses Remaining:<h3 id="guessesId"></h2></div>
-        <div class="col-md-3 col-centered"><h3>Losses:<h3 id="lossesId"></div>
+    <div class="container text-center">
+        <h3 class="text-center"><button type="button"  class="centered btn btn-success">Start Game!</button></h3>
+        <div class="row justify-content-md-center">
+            <div class="col-md-3 col-centered">
+                <h3>Wins</h3><p id="winsId"></p>
+            </div>
+            <div class="col-md-6 col-centered">
+                <h3>Lives Remaining</h3><p id="guessesId"></p>
+            </div>
+            <div class="col-md-3 col-centered">
+                <h3>Losses</h3><p id="lossesId"></p>
+            </div>
+        </div>
     </div>
-</div>
 </BODY>
 
 </HTML>

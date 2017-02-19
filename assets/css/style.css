@@ -1,21 +1,113 @@
   .letter {
-      border: 1px solid red;
-      padding: 13px;
-      margin: 2px;
+      padding: 0 10px 0 10px;
+      margin: 7px;
+      font-size:2em;
       cursor: default;
-      background-color: white;
+      background-color: #E4B92E;
+      display:inline-block;
   }
+  
   .letter-button-color {
-      color: red;
+      color: white;
   }
+
+  #buttons{
+    overflow: auto;
+  }
+  
   .hiddenLetter {
       display: inline;
   }
   
   .container {
+    width:100%;
       text-align: center;
   }
   
   .col-md-4 {
       display: inline;
   }
+  
+  .btn, .btn:active, .btn:active:focus{
+      font-size: 30px;
+      color: #fff;
+      background-color: #340865;
+      border: none;
+      margin:20px;
+  }
+  
+  .btn:hover, .btn:focus {
+      background-color: #220542;
+      border-color: white;
+  }
+  
+  #winsId {
+      color: #00a800;
+      font-weight: bolder;
+      font-size: 30px;
+      text-decoration: none;
+  }
+  
+  #lossesId {
+      color: red;
+      font-weight: bolder;
+      font-size: 30px;
+      text-decoration: none;
+  }
+  
+  #guessesId {
+      font-weight: bolder;
+      font-size: 30px;
+      text-decoration: none;
+  }
+  
+  ::-moz-selection {
+      background: #340865;
+      color: #fff;
+      text-shadow: none;
+  }
+  
+  ::selection {
+      background: #340865;
+      color: #fff;
+      text-shadow: none;
+  }
+  
+  body {
+      font-family: 'Titillium Web', sans-serif;
+      color:white;
+      font-weight: 400;
+      font-size: 16px;
+      background-color: #E4B92E;
+      -webkit-font-smoothing: antialiased;
+      -webkit-overflow-scrolling: touch;
+  }
+  
+  h1,
+  #secretWordId,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-weight: 700;
+      color: #ffffff;
+  }
+  h1{
+    margin-top: 0px;
+  }
+  .jumbotron {
+      background-color: #e3d2f5;
+      padding-top:0px;
+      background-image: url("../images/cover1.jpg");
+      background-size: cover;
+      margin-bottom:10px;
+  }
+.container h3{
+  color:#340865;
+  margin:0 0 0 0;
+  text-decoration: underline;
+}
+#guessesId{
+  color:white;
+}
