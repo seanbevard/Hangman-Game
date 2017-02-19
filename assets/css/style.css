@@ -1,0 +1,22 @@
+  .letter {
+      border: 1px solid red;
+      padding: 13px;
+      margin: 2px;
+      cursor: default;
+      background-color: white;
+  }
+  .letter-button-color {
+      color: red;
+  }
+  
+  .hiddenLetter {
+      display: inline;
+  }
+  
+  .container {
+      text-align: center;
+  }
+  
+  .col-md-4 {
+      display: inline;
+  }
