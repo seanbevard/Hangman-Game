@@ -2,13 +2,13 @@
       margin: 10px;
       width: 50px;
       font-size: 2em;
-      cursor: default;
       background-color: #e7c146;
+      border:none;
       display: inline-block;
   }
   
   .letter-button-color {
-      color: white;
+      color: #340865;
   }
   
   #buttons {
@@ -138,7 +138,7 @@
   }
   
   #guessesId {
-      color: white;
+      color: black;
   }
   /*sticky footer code*/
   
