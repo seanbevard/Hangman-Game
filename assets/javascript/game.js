@@ -60,7 +60,7 @@
                     var found = false;
                     playerGuess = event.key;
                     playerGuess = playerGuess.toUpperCase();
-                    
+
                     //make sure only A-Z keys are pressed, convert to uppercase
                     //and mark letter button as used regardless of if it's in the 
                     //secret word or not
@@ -81,26 +81,26 @@
                         //guessed before deducting a guess. afterward, push to the 
                         //already guessed array.
                         if (found === false) {
-                            
-                            
-                            console.log(isDupe(playerGuess,alreadyGuessed));
-                            if (isDupe(playerGuess,alreadyGuessed)===false) {
+
+
+                            console.log(isDupe(playerGuess, alreadyGuessed));
+                            if (isDupe(playerGuess, alreadyGuessed) === false) {
                                 remainingGuesses = (remainingGuesses - 1);
-                                
+
                             }
                             //warn the user that they have one life left,
                             //by turning the field red.
-                            if (remainingGuesses===1){
-                            	$("#guessesId").css("color","red")
+                            if (remainingGuesses === 1) {
+                                $("#guessesId").css("color", "red")
                             }
                             if (remainingGuesses === 0) {
-                            	$("#guessesId").html(remainingGuesses);
+                                $("#guessesId").html(remainingGuesses);
                                 loser();
                             } else {
                                 $("#guessesId").html(remainingGuesses);
                             }
                         }
-                        	alreadyGuessed.push(playerGuess);
+                        alreadyGuessed.push(playerGuess);
                     }
                 }
             };
@@ -146,9 +146,9 @@
             //this will reset everything
             //on a win or a loss.
             function reset() {
-            	$("#guessesId").css("color","white");
-            	$(".btn-success").html("Restart!");
-            	$("#instructions").html("Press a key to play!");
+                $("#guessesId").css("color", "white");
+                $(".btn-success").html("Restart!");
+                $("#instructions").html("Press a key to play!");
                 $("#guessesId").empty();
                 $("#guessesId").empty();
                 $("#secretWordId").empty();
@@ -169,7 +169,7 @@
                     wins++;
                     gameOver = true;
                     $("#secretWordId").css("color", "#00a800");
-                    $("#secretWordId").css("letter-spacing", "3px");
+                    $("#secretWordId").css("letter-spacing", "2px");
                     $("#winsId").html(wins);
                     var randomFile = "assets/audio/" + winAudio[Math.floor(Math.random() * winAudio.length)];
                     var audio = new Audio(randomFile);
