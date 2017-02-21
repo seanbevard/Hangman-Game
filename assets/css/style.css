@@ -6,7 +6,11 @@
       border:none;
       display: inline-block;
   }
-  
+  .row{
+    display: flex;
+
+justify-content: center;
+  }
   .letter-button-color {
       color: #340865;
   }
